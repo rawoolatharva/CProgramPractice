@@ -1,22 +1,49 @@
 #include <stdio.h>
 void main()
 {
-    int i =2, no;
-    // printf("\n\tPlease enter your source number => ");
-    // scanf("%d", &src);
-    // printf("\n\tPlease enter your destination number => ");
-    // scanf("%d", &dest);
-    printf("\n\tPlease enter your number => ");
-    scanf("%d", &no);
-        while(i < no)
+    int i =2, src, dest,temp;
+    printf("\n\tPlease enter your source number => ");
+    scanf("%d", &src);
+    printf("\n\tPlease enter your destination number => ");
+    scanf("%d", &dest);
+        temp = src;
+        // when dest is greater than src
+         while(src <= dest)
         {
-           if(no % i == 0)
-           {
-            printf("\n\tNo! It is not a prime number...");
-            break;
-           }
-           i++;
+            while(i < src)
+            {
+              if(src % i == 0)
+                {
+                  // printf("\n\t%d is not a prime number...", src);
+                  break;
+                }
+                i++;
+            }
+            if(i==src)
+            {
+                printf("\n\t%d", src);
+            }
+          i=2;  
+          src++;
         }
-        if(i==no)
-          printf("\n\tYes! It is a prime number...");
+        src = temp;
+        //when src is greater than dest
+         while(src >= dest)
+        {
+            while(i < src)
+            {
+              if(src % i == 0)
+                {
+                  // printf("\n\t%d is not a prime number...", src);
+                  break;
+                }
+                i++;
+            }
+            if(i==src)
+            {
+                printf("\n\t%d", src);
+            }
+          i=2;  
+          src--;
+        }
 }
