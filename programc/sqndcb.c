@@ -3,7 +3,6 @@
 void main()
 {
     int i, sq, cb;
-    //accept a number from user
     printf("\n\tPlease enter your number here => ");
     scanf("%d", &i);
     sq = i * i;
