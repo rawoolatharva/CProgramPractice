@@ -1,18 +1,18 @@
+// function for adding two user inputs
 #include <stdio.h>
-void main()
+int add(int,int, int *);
+int main()
 {
-    int fno, sno, sum = 0;
+    int fno, sno, sum;
     printf("\n\tPlease enter your first number => ");
     scanf("%d", &fno);
     printf("\n\tPlease enter your second number => ");
     scanf("%d", &sno);
     // here we will store the returned summation into our sum variable
-    sum = add(fno,sno);
+    add(fno,sno, &sum);
     printf("\n\t%d + %d = %d\n", fno, sno, sum);
 }
-add(int f,int s)
+int add(int f,int s, int *sm)
 {
-    int sm;
-    sm = f + s;
-    return sm;
+    *sm = f + s;
 }

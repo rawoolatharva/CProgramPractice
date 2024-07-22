@@ -1,3 +1,4 @@
+// find the net price of tshirt at different discounts
 #include <stdio.h>
 void main()
 {
