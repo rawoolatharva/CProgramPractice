@@ -1,4 +1,4 @@
-// function for adding two user inputs
+// function for adding two user inputs using pointer
 #include <stdio.h>
 int add(int,int, int *);
 int main()
@@ -8,7 +8,6 @@ int main()
     scanf("%d", &fno);
     printf("\n\tPlease enter your second number => ");
     scanf("%d", &sno);
-    // here we will store the returned summation into our sum variable
     add(fno,sno, &sum);
     printf("\n\t%d + %d = %d\n", fno, sno, sum);
 }

@@ -14,7 +14,6 @@ void main()
             {
               if(src % i == 0)
                 {
-                  // printf("\n\t%d is not a prime number...", src);
                   break;
                 }
                 i++;
@@ -34,7 +33,6 @@ void main()
             {
               if(src % i == 0)
                 {
-                  // printf("\n\t%d is not a prime number...", src);
                   break;
                 }
                 i++;
