@@ -1,4 +1,4 @@
-// smallest number in the array
+// largest number in the array
 #include <stdio.h>
 void main()
 {
@@ -8,14 +8,14 @@ void main()
     {
         scanf("%d", &arr[i]);
     }
-    // now lets check the smallest number
+    // now lets check the largest number
     temp = arr[0];
     for(int j = 0; j < 4; j++)
     {
-        if(temp > arr[j+1])
+        if(temp < arr[j+1])
         {
            temp = arr[j+1];
         }
     }
-    printf("\n\tThe smallest number in your array is %d\n", temp);
+    printf("\n\tThe largest number in your array is %d\n", temp);
 }
