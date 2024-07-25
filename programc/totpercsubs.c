@@ -1,3 +1,4 @@
+// accept marks of 6 subjects and calculate total and percentage of student
 #include <stdio.h>
 void main()
 {

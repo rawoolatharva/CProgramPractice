@@ -1,15 +1,11 @@
-// program to convert char values in an array to their ascii values
+// program to convert your string from lower to upper and vice versa
 #include <stdio.h>
 void main()
 {
-    char arr[5], temp[5];
+    char arr[10];
     int i = 0;
     printf("\n\tPlease enter your charaters here => ");
-    for(int i =0; i < 5; i++)
-    {
-        scanf("%c", &arr[i]);
-    }
-    temp[5] = arr[5];
+    scanf("%s", arr);
     while(arr[i] != '\0')
     {
         if(arr[i] >= 'a' && arr[i] <= 'z')
@@ -24,15 +20,5 @@ void main()
         }
         i++;
     }
-    printf("Your input array : ");
-    for (int j = 0; j < 5 ; j++)
-    {
-        printf("%c", temp[j]);
-    }
-    printf("Now looks like this : ");
-    for (int k = 0; k < 5; k++)
-    {
-        printf("%c", arr[k]);
-    }
-    
+    printf("\n\tYour string is converted to : %s\n", arr);
 } 
