@@ -21,18 +21,43 @@ void main()
            count++;
         }
     }
-    if(count > 3)
+    // lets check for class will the student fall in based on their percentage
+    // 210 is the passing grandtotal
+    if (grandtotal > 210)
     {
-        printf("\n\tYou have FAILED this semester...");
+        if(count > 3)
+        {
+            printf("\n\tYou have FAILED this semester...");
+        }
+        else if(count == 0)
+        {
+            perc = (float)total / (float)grandtotal;
+            if( perc >= 0.75)
+            {
+                printf("\n\tYour percentage for this semester is: %0.2f", perc*100);
+                printf("\n\tYou have passed with Distinction/Honors");
+            }
+            else if( perc >= 0.60)
+            {
+                printf("\n\tYour percentage for this semester is: %0.2f", perc*100);
+                printf("\n\tYou have passed with First Class");
+            }
+            else if( perc >= 0.50)
+            {
+                printf("\n\tYour percentage for this semester is: %0.2f", perc*100);
+                printf("\n\tYou have passed with Second Class");
+            }
+            else
+            {
+                printf("\n\tYour percentage for this semester is: %0.2f", perc*100);
+                printf("\n\tYou have passed with Third Class");
+            }     
+        }
+        else if(count <= 3)
+        {
+            printf("\n\tYou have ATKT in %d subjects...", count);
+        }
+        printf("\n"); 
     }
-    else if(count == 0)
-    {
-        perc = (float)total / (float)grandtotal;
-        printf("\n\tYour percentage for this semester is: %0.2f", perc*100);
-    }
-    else if(count <= 3)
-    {
-       printf("\n\tYou have ATKT in %d subjects...", count);
-    }
-    printf("\n"); 
+    
 }
