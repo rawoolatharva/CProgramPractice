@@ -1,0 +1,6 @@
+File Handling:
+1. to Open a File.
+2. either read OR write the File.
+3. to Close the File.
+-----------------------------------------------------
+fopen
