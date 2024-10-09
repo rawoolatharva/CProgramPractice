@@ -1,4 +1,4 @@
-// function for adding two user inputs using pointer
+// function for adding two user inputs using pointer and showing result on client side without returning
 #include <stdio.h>
 int add(int,int, int *);
 int main()
