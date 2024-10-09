@@ -1,3 +1,4 @@
+// displayed different format specifiers
 #include <stdio.h>
 //dispaly values of different datatypes
 void main()
